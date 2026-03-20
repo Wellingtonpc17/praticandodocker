@@ -21,7 +21,9 @@ services:
     volumes:
       - ./meufrontend:/usr/share/nginx/html
   php-fpm:
-    image: php:8.3-fpm
+    build: 
+      context: ./
+      dockerfile: Dockerfile-Php8-Fpm
     container_name: fzl-php8.3-fpm
     volumes:
       - ./meufrontend:/var/www/html
