@@ -4,6 +4,7 @@ services:
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: aluno123
+      MYSQL_DATABASE: meubanco
 
   phpmyadmin:
     image: phpmyadmin
